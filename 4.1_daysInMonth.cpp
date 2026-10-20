@@ -16,7 +16,9 @@ int main()
 	cout << endl;
 
 	//Year calculation
-	if (year % 4 == 0 || year % 400 == 0)
+
+	if ((year % 4 == 0 && year % 100 != 0)|| year % 400 == 0) 
+		// For clarity: I did use AI to help me figure out what I was missing from this calculation. All expressions aside from year % 100 != 0 is from my brain.
 	{
 		leapYear = true;
 		cout << "This is a leap year." << endl;
