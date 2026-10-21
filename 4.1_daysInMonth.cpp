@@ -21,10 +21,56 @@ int main()
 		// For clarity: I did use AI to help me figure out what I was missing from this calculation. All expressions aside from year % 100 != 0 is from my brain.
 	{
 		leapYear = true;
-		cout << "This is a leap year." << endl;
+		cout << year << " is a leap year." << endl;
 	}
 	else {
-		cout << "This year is not a leap year." << endl;
+		cout << year << " is not a leap year." << endl;
+	}
+
+	//Month calculation
+	switch (monthnum)
+	{
+	case 1:
+		cout << "January has 31 days." << endl;
+		break;
+	case 2:
+		if (leapYear == true)
+			cout << "February has 29 days." << endl;
+		else
+			cout << "February has 28 days." << endl;
+		break;
+	case 3:
+		cout << "March has 31 days." << endl;
+		break;
+	case 4:
+		cout << "April has 30 days." << endl;
+		break;
+	case 5:
+		cout << "May has 31 days." << endl;
+		break;
+	case 6:
+		cout << "June has 30 days." << endl;
+		break;
+	case 7:
+		cout << "July has 31 days." << endl;
+		break;
+	case 8:
+		cout << "August has 31 days." << endl;
+		break;
+	case 9:
+		cout << "September has 30 days." << endl;
+		break;
+	case 10:
+		cout << "October has 31 days." << endl;
+		break;
+	case 11:
+		cout << "November has 30 days." << endl;
+		break;
+	case 12:
+		cout << "December has 31 days." << endl;
+		break;
+	default:
+		cout << "Invalid month. Please enter a number between 1 and 12." << endl;
 	}
 
 	return 0;
